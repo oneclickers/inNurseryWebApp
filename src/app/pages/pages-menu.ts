@@ -2,6 +2,24 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
+    title: 'Application-Basic-Info',
+    icon: 'at-outline',
+    home: true,
+    children: [
+      {
+        title: 'Employee-Role',
+        icon: 'at-outline',
+        link: '/pages/webappbasicinfo/employeerole',
+      },
+    ],
+  },
+  {
+    title: 'Employee-Management',
+    icon: 'shopping-cart-outline',
+    link: '/pages/employeemanagement',
+    home: true,
+  },
+  {
     title: 'E-commerce',
     icon: 'shopping-cart-outline',
     link: '/pages/dashboard',

@@ -1,0 +1,60 @@
+.active{
+    color: #28a745;
+  }
+  .inActive{
+   color: red;
+  }
+  .paginator {
+    font-size: 95%;
+  
+    .btn {
+      &:focus {
+        box-shadow: none;
+        cursor: pointer;
+      }
+    }
+  
+    mark {
+      background-color: #f1f1f1;
+    }
+  
+    .pagination-components {
+      margin-bottom: 2rem;
+  
+      p {
+        margin-bottom: 0.5rem;
+      }
+  
+      .page-number {
+        display: inline-block;
+        width: 20px;
+        text-align: right;
+        margin-right: 3px;
+        cursor: pointer;
+      }
+    }
+  
+    .page-link {
+      cursor: pointer;
+    }
+  
+    .pagination-options {
+      ul {
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  
+  }
+  .bottom-pagination{
+    position: absolute;
+    bottom: 2px;
+  }
+  
+  .minWith135px{
+    min-width: 137px;
+  }
+  .minWith205px{
+    min-width: 205px;
+  }

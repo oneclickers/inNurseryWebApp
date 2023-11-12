@@ -5,6 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import { PgEmployeeManagementComponent } from './pg-employee-management/pg-employee-management.component';
 
 const routes: Routes = [{
   path: '',
@@ -19,9 +20,18 @@ const routes: Routes = [{
       component: DashboardComponent,
     },
     {
+      path: 'employeemanagement',
+      component: PgEmployeeManagementComponent,data:{header:'Employee Management'}
+    },
+    {
       path: 'layout',
       loadChildren: () => import('./layout/layout.module')
         .then(m => m.LayoutModule),
+    },
+    {
+      path: 'webappbasicinfo',
+      loadChildren: () => import('./web-app-base-config/web-app-base-config.module')
+        .then(m => m.WebAppBaseConfigModule),data: {some_data: 'some value'}
     },
     {
       path: 'forms',

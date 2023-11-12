@@ -10,4 +10,6 @@
 
 export const environment = {
   production: false,
+  serverConnectionUrl:'http://localhost:3000'
+  // serverConnectionUrl:'http://192.168.43.105:3000'
 };

@@ -1,0 +1,17 @@
+<nb-card class="shadow bg-white rounded-2 ">
+    <nb-card-header class="p-2" style="border-bottom: 3px solid rgb(250, 250, 161);color: lightslategrey;">{{Header}}</nb-card-header>
+    <nb-card-body style="border-top: 3px solid lightgray;">
+      <nb-tabset >
+        <nb-tab tabTitle="Employee">
+        <ngx-ch-employee-info></ngx-ch-employee-info>
+        </nb-tab>
+        <nb-tab tabTitle="Employee Role">
+         <ngx-ch-role-employee></ngx-ch-role-employee>
+        </nb-tab>
+        <nb-tab tabTitle="Transactions" disabled>
+          <p>List of <strong>transactions</strong>.</p>
+        </nb-tab>
+      </nb-tabset>
+  
+    </nb-card-body>
+  </nb-card>
