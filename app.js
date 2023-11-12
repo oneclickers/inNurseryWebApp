@@ -6,9 +6,16 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var employee_Role_Router = require('./routes/employee_Role');
+var employee_Info_Router = require('./routes/employee_Info');
+var role_employeeList_Router = require('./routes/role_employeeList');
 
+const cors = require("cors");
 var app = express();
 
+
+app.use(cors());
+app.options('*', cors())
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -21,6 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/employeerole', employee_Role_Router);
+app.use('/employeelist', employee_Info_Router);
+app.use('/roleemployeelist', role_employeeList_Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

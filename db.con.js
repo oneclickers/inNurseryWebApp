@@ -4,13 +4,13 @@ const { Client } = require('pg')
 const client = new Client({
   user: 'postgres',
   host: 'localhost',
-  database: 'postgres',
+  database: 'in.Nursery.WebApp.com',
   password: 'Selvam55@',
   port: 5555,
 })
 client.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
+  console.log("Database Connected Successfully...!");
 });
 
 module.exports = client;
